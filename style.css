@@ -563,6 +563,14 @@ body {
 
     }
 
-
-
+}
+@media (max-width: 480px) {
+    .logo img {
+        width: 30%;
+    }
+    .footer-top {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(180px, 1fr));
+    
+}
 }
