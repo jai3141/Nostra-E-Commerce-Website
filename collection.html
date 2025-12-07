@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nostra Footwear | Collections</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="container nav-content">
+            <a href="index.html" class="logo"><img src="images/Logo.png" alt="">
+                <span>
+                    <img src="images/Logo2.png" alt="">
+                </span></a>
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="collection.html" class="active">Collections</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+            <button class="menu-toggle" id="menuToggle">☰</button>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <nav class="mobile-menu" id="mobileMenu">
+        <a href="index.html">Home</a>
+        <a href="collection.html" class="active">Collections</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <main class="section">
+        <div class="container">
+            <h1 class="section-title">Our <span>Collections </span></h1>
+
+            <!-- Search + Filter Panel -->
+            <div class="filter-bar">
+                <input type="text" id="searchInput" placeholder="Search by name, type or color..." />
+
+                <div class="filter-group">
+                    <select id="categoryFilter">
+                        <option value="all">All Categories</option>
+                        <option value="sneakers">Sneakers</option>
+                        <option value="formal">Formal</option>
+                        <option value="sports">Sports</option>
+                        <option value="sandals">Sandals</option>
+                        <option value="home">Home</option>
+                    </select>
+
+                    <select id="colorFilter">
+                        <option value="all">All Colors</option>
+                        <option value="white">White</option>
+                        <option value="black">Black</option>
+                        <option value="blue">Blue</option>
+                        <option value="red">Red</option>
+                        <option value="brown">Brown</option>
+                        <option value="grey">Grey</option>
+                    </select>
+
+                    <select id="priceFilter">
+                        <option value="all">All Prices</option>
+                        <option value="low">Below ₹1,000</option>
+                        <option value="mid">₹1,000 - ₹2,000</option>
+                        <option value="high">Above ₹2,000</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Products Grid -->
+            <div class="product-grid" id="productGrid">
+                <!-- Each product uses data-* attributes for JS filter -->
+                <div class="product-card product" data-category="sneakers" data-color="white" data-price="1499">
+                    <img src="images/PC1.jpg" alt="">
+                    <h3>White Sneakers <i class="fa-solid fa-cart-shopping" style="color: #ff0a0a;"></i></h3>
+                    <p class="product-meta">Sneakers • White</p>
+                    <p class="price">₹1,499</p>
+                    <div class="stars">★★★★★</div>
+                </div>
+
+                <div class="product-card product" data-category="formal" data-color="black" data-price="2299">
+                    <img src="images/PC2.jpg" alt="">
+                    <h3>Black Derby Formal <i class="fa-solid fa-cart-shopping" style="color: #ff0a0a;"></i></h3>
+                    <p class="product-meta">Formal • Black</p>
+                    <p class="price">₹2,299</p>
+                    <div class="stars">★★★☆☆</div>
+                </div>
+
+                <div class="product-card product" data-category="sports" data-color="blue" data-price="1899">
+                    <img src="images/PC3.jpg" alt="">
+                    <h3>Runner Pro Sports <i class="fa-solid fa-cart-shopping" style="color: #ff0a0a;"></i></h3>
+                    <p class="product-meta">Sports • Blue & Black</p>
+                    <p class="price">₹1,899</p>
+                    <div class="stars">★★★★☆</div>
+                </div>
+
+                <div class="product-card product" data-category="sandals" data-color="brown" data-price="899">
+                    <img src="images/PC4.jpg" alt="">
+                    <h3>Leather Sandals <i class="fa-solid fa-cart-shopping" style="color: #ff0a0a;"></i></h3>
+                    <p class="product-meta">Sandals • Black & Brown</p>
+                    <p class="price">₹899</p>
+                    <div class="stars">★★★☆☆</div>
+                </div>
+
+                <div class="product-card product" data-category="sneakers" data-color="black" data-price="1599">
+                    <img src="images/PC5.jpg" alt="">
+                    <h3>Street Flex Sneakers <i class="fa-solid fa-cart-shopping" style="color: #ff0a0a;"></i></h3>
+                    <p class="product-meta">Sneakers • Black</p>
+                    <p class="price">₹1,599</p>
+                    <div class="stars">★★★★☆</div>
+                </div>
+
+                <div class="product-card product" data-category="sports" data-color="red" data-price="1199">
+                    <img src="images/PC6.jpg" alt="">
+                    <h3>Sprint Max Runner <i class="fa-solid fa-cart-shopping" style="color: #ff0a0a;"></i></h3>
+                    <p class="product-meta">Sports • Red</p>
+                    <p class="price">₹1,199</p>
+                    <div class="stars">★★★★★</div>
+                </div>
+
+                <div class="product-card product" data-category="formal" data-color="brown" data-price="2499">
+                    <img src="images/PC7.jpg" alt="">
+                    <h3>Premium Oxford Leather <i class="fa-solid fa-cart-shopping" style="color: #ff0a0a;"></i></h3>
+                    <p class="product-meta">Formal • Brown</p>
+                    <p class="price">₹2,499</p>
+                    <div class="stars">★★★☆☆</div>
+                </div>
+
+                <div class="product-card product" data-category="sandals" data-color="black" data-price="799">
+                    <img src="images/PC8.jpg" alt="">
+                    <h3>Everyday Comfort Sandals <i class="fa-solid fa-cart-shopping" style="color: #ff0a0a;"></i></h3>
+                    <p class="product-meta">Sandals • Black</p>
+                    <p class="price">₹799</p>
+                    <div class="stars">★★★★☆</div>
+                </div>
+
+                <div class="product-card product" data-category="sneakers" data-color="blue" data-price="1799">
+                    <img src="images/PC9.jpg" alt="">
+                    <h3>Walk Sneakers <i class="fa-solid fa-cart-shopping" style="color: #ff0a0a;"></i></h3>
+                    <p class="product-meta">Sneakers • Grey</p>
+                    <p class="price">₹1,799</p>
+                    <div class="stars">★★★☆☆</div>
+                </div>
+
+                <div class="product-card product" data-category="sports" data-color="white" data-price="2099">
+                    <img src="images/PC10.jpg" alt="">
+                    <h3>Training Shoes<i class="fa-solid fa-cart-shopping" style="color: #ff0a0a;"></i></h3>
+                    <p class="product-meta">Sports • Black</p>
+                    <p class="price">₹2,099</p>
+                    <div class="stars">★★☆☆☆</div>
+                </div>
+                <div class="product-card product" data-category="sports" data-color="white" data-price="2099">
+                    <img src="images/PC11.jpg" alt="">
+                    <h3>Slipper Flip-Flops <i class="fa-solid fa-cart-shopping" style="color: #ff0a0a;"></i></h3>
+                    <p class="product-meta">Home • White</p>
+                    <p class="price">₹399</p>
+                    <div class="stars">★★★★☆</div>
+                </div>
+                <div class="product-card product" data-category="sports" data-color="white" data-price="2099">
+                    <img src="images/PC12.jpg" alt="">
+                    <h3>Crocs <i class="fa-solid fa-cart-shopping" style="color: #ff0a0a;"></i></h3>
+                    <p class="product-meta">Home • Grey</p>
+                    <p class="price">₹499</p>
+                    <div class="stars">★★★☆☆</div>
+                </div>
+            </div>
+
+            <p id="noResultsMessage" class="no-results-message" style="display: none;">
+                No products match your search or filters.
+            </p>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="main-footer">
+
+        <div class="footer-top">
+
+            <div class="footer-column">
+                <h3>About</h3>
+                <a href="#">About NostraFootwear</a>
+                <a href="#">How it works</a>
+                <a href="#">Help</a>
+                <a href="#">Press</a>
+            </div>
+
+            <div class="footer-column">
+                <h3>Explore</h3>
+                <a href="#"> Sport Shoes</a>
+                <a href="#">Sandals</a>
+                <a href="#">Sneakers</a>
+                <a href="#">Shoping Guide</a>
+            </div>
+
+            <div class="footer-column">
+                <h3>Help</h3>
+                <a href="#">Support</a>
+                <a href="#">Account</a>
+                <a href="#">FAQs</a>
+                <a href="#">Safety Center</a>
+            </div>
+
+            <div class="footer-column">
+                <h3>Contact</h3>
+                <a href="#">Email: jaihanesh2004@gmail.com</a>
+                <a href="#">Phone: +91 6380501182</a>
+                <a href="#">Live Chat</a>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2025 NostraFootwear • Created by Jai</p>
+        </div>
+
+    </footer>
+    <!-- Link javascript -->
+
+    <script src="script.js"></script>
+</body>
+
+</html>
